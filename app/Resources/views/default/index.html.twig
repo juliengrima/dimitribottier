@@ -1,34 +1,8 @@
 {% extends 'layout.html.twig' %}
 
+{% block title %}Homepage{% endblock %}
+
 {% block body %}
-
-    <!-- Wrapper -->
-    <div id="wrapper">
-
-        <!-- Header -->
-        <header id="header" class="alt">
-            <a href="{{ path('homepage') }}" class="logo">
-                <strong>DimitriBottier</strong>
-                <span>paris</span>
-            </a>
-            <nav>
-                <a href="#menu">Menu</a>
-            </nav>
-        </header>
-
-        <!-- Menu -->
-        <nav id="menu">
-            <ul class="links">
-                <li><a href="{{ path('homepage') }}">Home</a></li>
-                <li><a href="#">Landing</a></li>
-                <li><a href="#">Generic</a></li>
-                <li><a href="#">Elements</a></li>
-            </ul>
-            <ul class="actions stacked">
-                <li><a href="#" class="button primary fit">Get Started</a></li>
-                <li><a href="#" class="button fit">Log In</a></li>
-            </ul>
-        </nav>
 
         <!-- Banner -->
         <section id="banner" class="major">
@@ -61,14 +35,14 @@
             <!-- One -->
             <section id="one" class="tiles">
 
-                {% for i in 0..5 %}
+                {% for navigation in navigations %}
                 <article>
                     <span class="image">
-                        <img src="images/pic01.jpg" alt="" />
+                        <img src="{{ navigation.media.path }}" alt="{{ navigation.media.name }}" />
                     </span>
                     <header class="major">
-                        <h3><a href="#" class="link">Aliquam</a></h3>
-                        <p>Ipsum dolor sit amet</p>
+                        <h3><a href="{{ path('navigation_index', { 'id': navigation.id }) }}" class="link">{{ navigation.name }}</a></h3>
+                        <p>{{ navigation.description }}</p>
                     </header>
                 </article>
                 {% endfor %}
@@ -142,8 +116,6 @@
                 {#</section>#}
             {#</div>#}
         {#</section>#}
-
-    </div>
 
 {% endblock %}
 

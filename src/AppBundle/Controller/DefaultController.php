@@ -14,8 +14,16 @@ class DefaultController extends Controller
     public function indexAction(Request $request)
     {
         // replace this example code with whatever you need
-        return $this->render('default/index.html.twig', [
-            'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
-        ]);
+
+        $em = $this->getDoctrine ()->getManager ();
+        $navigation = $em->getRepository ('AppBundle:Navigation')->findAll ();
+        return $this->render('default/index.html.twig', array(
+            'navigations' => $navigation
+        ));
+    }
+
+    public function panelAction(Request $request)
+    {
+        return $this->render('admin/panel.html.twig');
     }
 }
