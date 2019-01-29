@@ -1,0 +1,32 @@
+AppBundle\Entity\Navigation:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\NavigationRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+
+    fields:
+        name:
+            type: string
+            length: 70
+            nullable: false
+        description:
+            type: text
+            nullable: true
+        price:
+            type: integer
+        time:
+            type: string
+            length: 50
+
+    oneToOne:
+        media:
+            targetEntity: AppBundle\Entity\Media
+            cascade: ['all']
+
+    lifecycleCallbacks: {  }
+

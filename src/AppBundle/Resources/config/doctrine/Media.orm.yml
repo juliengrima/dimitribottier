@@ -1,0 +1,23 @@
+AppBundle\Entity\Media:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\MediaRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+        path:
+            type: string
+            length: 255
+
+    manyToOne:
+        media:
+            targetEntity: AppBundle\Entity\Media
+            cascade: ['all']
+    lifecycleCallbacks: {  }
