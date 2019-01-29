@@ -1,33 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85b1bcac-3db5-4d06-9a02-d61ec81980ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Resources/views/layout.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Media.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Navigation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/Media.orm.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/Navigation.orm.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Resources/config/services.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/assets/javascript/forty/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/assets/stylesheet/child.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/assets/stylesheet/forty/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/assets/stylesheet/forty/noscript.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/javascript/breakpoints.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/javascript/forty/breakpoints.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/javascript/browser.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/javascript/forty/browser.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/javascript/demo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/javascript/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/javascript/forty/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/javascript/jquery.scrollex.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/javascript/forty/jquery.scrollex.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/javascript/jquery.scrolly.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/javascript/forty/jquery.scrolly.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/javascript/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/javascript/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/javascript/forty/util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/stylesheet/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/stylesheet/forty/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/stylesheet/main-child.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/stylesheet/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/stylesheet/noscript.css" beforeDir="false" />
-    </list>
+    <list default="true" id="85b1bcac-3db5-4d06-9a02-d61ec81980ac" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,30 +49,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="285">
               <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
               <folding>
                 <element signature="e#12#28#0#Twig" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/Navigation.orm.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Media.php">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -136,8 +96,8 @@
         <option value="$PROJECT_DIR$/web/assets/stylesheet/forty/main.css" />
         <option value="$PROJECT_DIR$/app/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/web/assets/stylesheet/child.css" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/Navigation.orm.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Navigation.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/Navigation.orm.yml" />
       </list>
     </option>
   </component>
@@ -291,23 +251,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1548768936891</updated>
-      <workItem from="1548768938138" duration="9327000" />
+      <workItem from="1548768938138" duration="9994000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9327000" />
+    <option name="totallyTimeSpent" value="9994000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32891566" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" weight="0.32916668" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -362,13 +322,6 @@
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/config/services.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/Media.orm.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/stylesheet/forty/font-awesome.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -404,30 +357,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Media.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/Media.orm.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-          <folding>
-            <element signature="e#12#28#0#Twig" expanded="true" />
-          </folding>
+        <state relative-caret-position="270">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Navigation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1922">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/Navigation.orm.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        <state relative-caret-position="315">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Media.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Navigation.php">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="285">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding>
+            <element signature="e#12#28#0#Twig" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

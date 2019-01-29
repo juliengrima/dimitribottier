@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Navigations list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Time</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for navigation in navigations %}
+            <tr>
+                <td><a href="{{ path('navigation_show', { 'id': navigation.id }) }}">{{ navigation.id }}</a></td>
+                <td>{{ navigation.name }}</td>
+                <td>{{ navigation.description }}</td>
+                <td>{{ navigation.price }}</td>
+                <td>{{ navigation.time }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('navigation_show', { 'id': navigation.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('navigation_edit', { 'id': navigation.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('navigation_new') }}">Create a new navigation</a>
+        </li>
+    </ul>
+{% endblock %}
