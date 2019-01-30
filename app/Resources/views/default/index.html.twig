@@ -23,7 +23,7 @@
                         de sa technique de fabrication, qu'il est aujourd'hui l'un des derniers à utiliser ainsi que ses dernières créations.
                         Bienvenue dans l'univers de la botterie d'exception</p>
                     <ul class="actions">
-                        <li><a href="#one" class="button next scrolly">Get Started</a></li>
+                        <li><a href="#one" class="button next scrolly">Commencer la visite</a></li>
                     </ul>
                 </div>
             </div>
@@ -38,11 +38,15 @@
                 {% for navigation in navigations %}
                 <article>
                     <span class="image">
-                        <img src="{{ navigation.media.path }}" alt="{{ navigation.media.name }}" />
+                        <img src="{{ asset(navigation.media.path) }}" alt="{{ navigation.media.name }}" />
                     </span>
                     <header class="major">
                         <h3><a href="{{ path('navigation_index', { 'id': navigation.id }) }}" class="link">{{ navigation.name }}</a></h3>
                         <p>{{ navigation.description }}</p>
+                        {% if navigation.price and navigation.time != null %}
+                        <p>A partir de : {{ navigation.price }}</p>
+                        <p>Délai : {{ navigation.time }}</p>
+                        {% endif %}
                     </header>
                 </article>
                 {% endfor %}

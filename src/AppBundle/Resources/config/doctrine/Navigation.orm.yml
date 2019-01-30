@@ -18,10 +18,13 @@ AppBundle\Entity\Navigation:
             type: text
             nullable: true
         price:
-            type: integer
+            type: string
+            length: 5
+            nullable: true
         time:
             type: string
             length: 50
+            nullable: true
 
     oneToOne:
         media:

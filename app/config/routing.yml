@@ -9,12 +9,17 @@ app:
     type: annotation
     methods:  [GET, POST]
 
+
 ##########################################################
 ##########################################################
-######################### CRUD ###########################
+#################### Admin Panel #########################
 ##########################################################
 ##########################################################
 
+admin_panel:
+    path:     /admin
+    defaults: { _controller: "AppBundle:Default:panel" }
+
 app_navigation:
     resource: "@AppBundle/Resources/config/routing/navigation.yml"
-    prefix:   /navigation
+    prefix:   /admin/navigation
