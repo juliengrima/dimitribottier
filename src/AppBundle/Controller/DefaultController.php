@@ -11,19 +11,14 @@ class DefaultController extends Controller
     /**
      * @Route("/", name="homepage")
      */
-    public function indexAction(Request $request)
+    public function indexAction()
     {
-        // replace this example code with whatever you need
-
-        $em = $this->getDoctrine ()->getManager ();
-        $navigation = $em->getRepository ('AppBundle:Navigation')->findAll ();
-        return $this->render('default/index.html.twig', array(
-            'navigations' => $navigation
-        ));
+        return $this->render('default/index.html.twig');
     }
 
-    public function panelAction(Request $request)
-    {
-        return $this->render('admin/panel.html.twig');
+    public function activityAction (){
+
+        return $this->render('activity/activity.twig');
     }
+
 }

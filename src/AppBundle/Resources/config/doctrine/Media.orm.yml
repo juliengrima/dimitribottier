@@ -16,8 +16,8 @@ AppBundle\Entity\Media:
             type: string
             length: 255
 
-    manyToOne:
-        media:
-            targetEntity: AppBundle\Entity\Media
-            cascade: ['all']
+#    manyToOne:
+#        media:
+#            targetEntity: AppBundle\Entity\Media
+#            cascade: ['all']
     lifecycleCallbacks: {  }

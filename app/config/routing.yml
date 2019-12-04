@@ -9,6 +9,10 @@ app:
     type: annotation
     methods:  [GET, POST]
 
+app_activitie:
+    path:     /activite
+    defaults: { _controller: "AppBundle:Default:activity" }
+
 
 ##########################################################
 ##########################################################
@@ -16,10 +20,10 @@ app:
 ##########################################################
 ##########################################################
 
-admin_panel:
-    path:     /admin
-    defaults: { _controller: "AppBundle:Default:panel" }
+#admin_panel:
+#    path:     /admin
+#    defaults: { _controller: "AppBundle:Default:panel" }
 
-app_navigation:
-    resource: "@AppBundle/Resources/config/routing/navigation.yml"
-    prefix:   /admin/navigation
+#app_navigation:
+#    resource: "@AppBundle/Resources/config/routing/navigation.yml"
+#    prefix:   /admin/navigation
