@@ -16,9 +16,9 @@ class DefaultController extends Controller
         return $this->render('default/index.html.twig');
     }
 
-    public function activityAction (){
+    public function actualityAction (){
 
-        return $this->render('activity/activity.twig');
+        return $this->render('actuality/actuality.twig');
     }
 
 }

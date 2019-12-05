@@ -9,9 +9,9 @@ app:
     type: annotation
     methods:  [GET, POST]
 
-app_activitie:
-    path:     /activite
-    defaults: { _controller: "AppBundle:Default:activity" }
+app_actuality:
+    path:     /actualité
+    defaults: { _controller: "AppBundle:Default:actuality" }
 
 
 ##########################################################

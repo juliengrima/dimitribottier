@@ -1,0 +1,45 @@
+{% extends 'layout.html.twig' %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/stylesheet/slick/slick.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/stylesheet/slick/slick-theme.css') }}"/>
+{% endblock %}
+
+
+{% block body %}
+
+    <!-- Two -->
+    <section id="one">
+        <div class="inner align-center">
+            <div id="fb-root"></div>
+            <div class="fb-page" data-href="https://www.facebook.com/Dimitri-Gomez-Bottier-287965061251077/" data-tabs="events" data-width="2000" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/Dimitri-Gomez-Bottier-287965061251077/" class="fb-xfbml-parse-ignore">
+                    <a href="https://www.facebook.com/Dimitri-Gomez-Bottier-287965061251077/">Dimitri Gomez Bottier</a>
+                </blockquote>
+            </div>
+        </div>
+        <div class="inner">
+            <header class="major">
+                <h2>Cette saison</h2>
+            </header>
+            <div id="bloc2">
+                <img src="{{ asset('assets/images/local/actuality/saison/Actu1.jpg') }}">
+                <img src="{{ asset('assets/images/local/actuality/saison/Actu2.jpg') }}">
+                <img src="{{ asset('assets/images/local/actuality/saison/Actu3.jpg') }}">
+                <img src="{{ asset('assets/images/local/actuality/saison/Actu4.jpg') }}">
+                <img src="{{ asset('assets/images/local/actuality/saison/Actu5.jpg') }}">
+                <img src="{{ asset('assets/images/local/actuality/saison/Actu6.jpg') }}">
+                <img src="{{ asset('assets/images/local/actuality/saison/Actu7.jpg') }}">
+                <img src="{{ asset('assets/images/local/actuality/saison/Actu8.jpg') }}">
+                <img src="{{ asset('assets/images/local/actuality/saison/Actu9.jpg') }}">
+                <img src="{{ asset('assets/images/local/actuality/saison/Actu10.jpg') }}">
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v5.0"></script>
+    <script type="text/javascript" src="{{asset('assets/javascript/child.js')}}"></script>
+{% endblock %}
