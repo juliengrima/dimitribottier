@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="{{ asset('assets/stylesheet/multiverse/noscript.css') }}" />
 {% endblock %}
 
+{% block mainCSS %}
+    <style>
+        .ul-center{
+            margin-right: 50%;
+            font-size: 1.6em;
+        }
+    </style>
+{% endblock %}
+
 {% block body %}
 
     <div id="wrapper">
@@ -14,14 +23,9 @@
         <!-- Header -->
         <header id="header">
             <h1><a href="https://html5up.net/"><strong>Multiverse</strong> by HTML5 UP</a></h1>
-            <nav>
-                <ul>
+            <nav class="ul-center">
+                <ul class="">
                     <li><a href="{{ path('app_actuality')}}" class="">Retour</a></li>
-                    <li><a href="{{ path('app_actuality_ncreation')}}r" class="">Nouvelles créations</a></li>
-                    <li><a href="{{ path('app_actuality_pcreation')}}" class="">Précédentes creations</a></li>
-                    <li><a href="{{ path('app_actuality_exotic')}}" class="">Exotiques</a></li>
-                    <li><a href="{{ path('app_actuality_inspiration')}}" class="">Inspiration</a></li>
-                    <li><a href="{{ path('app_actuality_leatherwork')}}" class="">Peausseries disponibles</a></li>
                 </ul>
             </nav>
         </header>
@@ -80,17 +84,6 @@
             </article>
         </div>
 
-        <!-- Footer -->
-{#        <footer id="footer" class="">#}
-{#            <div class="inner">#}
-{#                <div>#}
-{#                    <p class="copyright">#}
-{#                        &copy; Unttled. Design: <a href="http://html5up.net">HTML5 UP</a>.#}
-{#                    </p>#}
-{#                </div>#}
-{#            </div>#}
-{#        </footer>#}
-
     </div>
 
 
@@ -99,8 +92,8 @@
 {% block javascripts %}
     <script src="{{ asset('assets/javascript/multiverse/jquery.min.js') }}"></script>
     <script src="{{ asset('assets/javascript/multiverse/jquery.poptrox.min.js') }}"></script>
-{#    <script src="{{ asset('assets/javascript/multiverse/browser.min.js') }}"></script>#}
-{#    <script src="{{ asset('assets/javascript/multiverse/breakpoints.min.js') }}"></script>#}
-{#    <script src="{{ asset('assets/javascript/multiverse/util.js') }}"></script>#}
+    <script src="{{ asset('assets/javascript/multiverse/browser.min.js') }}"></script>
+    <script src="{{ asset('assets/javascript/multiverse/breakpoints.min.js') }}"></script>
+    <script src="{{ asset('assets/javascript/multiverse/util.js') }}"></script>
     <script src="{{ asset('assets/javascript/multiverse/main.js') }}"></script>
 {% endblock %}
