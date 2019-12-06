@@ -1,0 +1,77 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}actualités{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+
+{% block body %}
+
+    <!-- Two -->
+    <section id="one">
+        <div class="inner align-center">
+            <div id="fb-root"></div>
+            <div class="fb-page" data-href="https://www.facebook.com/Dimitri-Gomez-Bottier-287965061251077/" data-tabs="events" data-width="1280" data-height="1024" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/Dimitri-Gomez-Bottier-287965061251077/" class="fb-xfbml-parse-ignore">
+                    <a href="https://www.facebook.com/Dimitri-Gomez-Bottier-287965061251077/">Dimitri Gomez Bottier</a>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+    <section id="two" class="tiles">
+        <article>
+            <span class="image">
+                <img src="{{ asset("assets/images/local/actuality/saison/Actu1.jpg") }}" alt="cette_saison" />
+            </span>
+            <header class="major">
+                <h3><a href="{{ path('app_actuality_season') }}" class="link">Cette saison</a></h3>
+            </header>
+        </article>
+        <article>
+            <span class="image">
+                <img src="{{ asset("assets/images/local/actuality/ncreation/ncreation1.jpg") }}" alt="nouvelles_creation" />
+            </span>
+            <header class="major">
+                <h3><a href="{{ path('app_actuality_ncreation') }}" class="link">Nouvelles créations</a></h3>
+            </header>
+        </article>
+        <article>
+            <span class="image">
+                <img src="{{ asset("assets/images/local/actuality/nav.jpg") }}" alt="precedentes_creations" />
+            </span>
+            <header class="major">
+                <h3><a href="{{ path('app_actuality_pcreation') }}" class="link">Précédentes créations</a></h3>
+            </header>
+        </article>
+        <article>
+            <span class="image">
+                <img src="{{ asset("assets/images/local/actuality/nav.jpg") }}" alt="actualities" />
+            </span>
+            <header class="major">
+                <h3><a href="{{ path('app_actuality_season') }}" class="link">Exotiques</a></h3>
+            </header>
+        </article>
+        <article>
+            <span class="image">
+                <img src="{{ asset("assets/images/local/actuality/nav.jpg") }}" alt="actualities" />
+            </span>
+            <header class="major">
+                <h3><a href="{{ path('app_actuality_season') }}" class="link">Inspiration</a></h3>
+            </header>
+        </article>
+        <article>
+            <span class="image">
+                <img src="{{ asset("assets/images/local/actuality/nav.jpg") }}" alt="actualities" />
+            </span>
+            <header class="major">
+                <h3><a href="{{ path('app_actuality_season') }}" class="link">Peausseries disponibles</a></h3>
+            </header>
+        </article>
+    </section>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v5.0"></script>
+{% endblock %}

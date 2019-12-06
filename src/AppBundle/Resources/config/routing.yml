@@ -1,4 +1,0 @@
-app_navigation:
-    resource: "@AppBundle/Resources/config/routing/navigation.yml"
-    prefix:   /navigation
-

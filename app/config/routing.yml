@@ -9,6 +9,33 @@ app:
     type: annotation
     methods:  [GET, POST]
 
+app_actuality:
+    path:     /actualite
+    defaults: { _controller: "AppBundle:Default:actuality" }
+
+app_actuality_season:
+    path:     /actualite/cette_saison
+    defaults: { _controller: "AppBundle:Default:season" }
+
+app_actuality_ncreation:
+    path:     /actualite/nouvelles_creations
+    defaults: { _controller: "AppBundle:Default:nCreation" }
+
+app_actuality_pcreation:
+    path:     /actualite/precedentes_creations
+    defaults: { _controller: "AppBundle:Default:pCeation" }
+
+app_actuality_exotic:
+    path:     /actualite/exotiques
+    defaults: { _controller: "AppBundle:Default:exotic" }
+
+app_actuality_inspiration:
+    path:     /actualite/inspiration
+    defaults: { _controller: "AppBundle:Default:inspiration" }
+
+app_actuality_leatherwork:
+    path:     /actualite/peausseries
+    defaults: { _controller: "AppBundle:Default:leatherwork" }
 
 ##########################################################
 ##########################################################
@@ -16,10 +43,10 @@ app:
 ##########################################################
 ##########################################################
 
-admin_panel:
-    path:     /admin
-    defaults: { _controller: "AppBundle:Default:panel" }
+#admin_panel:
+#    path:     /admin
+#    defaults: { _controller: "AppBundle:Default:panel" }
 
-app_navigation:
-    resource: "@AppBundle/Resources/config/routing/navigation.yml"
-    prefix:   /admin/navigation
+#app_navigation:
+#    resource: "@AppBundle/Resources/config/routing/navigation.yml"
+#    prefix:   /admin/navigation

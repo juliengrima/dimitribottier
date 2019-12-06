@@ -25,7 +25,7 @@ class Media
 
     function __toString()
     {
-        return $this->getName() . " | " . $this->getPath();
+        return $this->getName() . ' | ' . $this->getPath();
     }
 
     /**

@@ -2,68 +2,99 @@
 
 {% block title %}Homepage{% endblock %}
 
-{% block body %}
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
 
-        <!-- Banner -->
-        <section id="banner" class="major">
-            <div class="inner">
-                <header class="major">
-                    <h1>DimitriBottier</h1>
-                </header>
-                <div class="content">
-                    <p>Dimitri Gomez, maître-bottier, fabrique entièrement à la main des modèles sur mesure destinés aux
-                        amateurs les plus exigeants.
-                        Dimitri officie au sein même de la boutique Crockett & Jones, sous le regard des passionnés qui
-                        le considèrent comme un des plus talentueux bottiers au monde.
-                        Sa clientèle internationale ne s'y trompe pas et lui confie ses rêves de chaussures les plus fous.
-                        A charge pour Dimitri de les transformer en chef d’œuvre d'élégance et de beauté.
-                        Proposant un choix de formes et de patronages très étendu, de peausseries rares issues des meilleures
-                        tanneries, Dimitri Gomez conçoit des pièces uniques répondant aux désirs de chacun.
-                        Vous trouverez sur ce site la présentation de ses modèles en mesure et en demi-mesure, l'explication détaillée
-                        de sa technique de fabrication, qu'il est aujourd'hui l'un des derniers à utiliser ainsi que ses dernières créations.
-                        Bienvenue dans l'univers de la botterie d'exception</p>
-                    <ul class="actions">
-                        <li><a href="#one" class="button next scrolly">Commencer la visite</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+{% block body %}
 
         <!-- Main -->
         <div id="main">
 
             <!-- One -->
             <section id="one" class="tiles">
-
-                {% for navigation in navigations %}
                 <article>
                     <span class="image">
-                        <img src="{{ asset(navigation.media.path) }}" alt="{{ navigation.media.name }}" />
+                        <img src="{{ asset("assets/images/local/actuality/nav.jpg") }}" alt="actualities" />
                     </span>
                     <header class="major">
-                        <h3><a href="{{ path('navigation_index', { 'id': navigation.id }) }}" class="link">{{ navigation.name }}</a></h3>
-                        <p>{{ navigation.description }}</p>
-                        {% if navigation.price and navigation.time != null %}
-                        <p>A partir de : {{ navigation.price }}</p>
-                        <p>Délai : {{ navigation.time }}</p>
-                        {% endif %}
+                        <h3><a href="{{ path('app_actuality') }}" class="link">Actualité</a></h3>
+                        <p>ffffffff</p>
                     </header>
                 </article>
-                {% endfor %}
 
+                <article>
+                    <span class="image">
+                        <img src="{{ asset("assets/images/local/actuality/nav.jpg") }}" alt="facebook" />
+                    </span>
+                    <header class="major">
+                        <h3><a href="" class="link">Actualité</a></h3>
+                        <p>ffffffff</p>
+                    </header>
+                </article>
+
+                <article>
+                    <span class="image">
+                        <img src="{{ asset("assets/images/local/actuality/nav.jpg") }}" alt="facebook" />
+                    </span>
+                    <header class="major">
+                        <h3><a href="" class="link">Actualité</a></h3>
+                        <p>ffffffff</p>
+                    </header>
+                </article>
+
+                <article>
+                    <span class="image">
+                        <img src="{{ asset("assets/images/local/actuality/nav.jpg") }}" alt="facebook" />
+                    </span>
+                    <header class="major">
+                        <h3><a href="" class="link">Actualité</a></h3>
+                        <p>ffffffff</p>
+                    </header>
+                </article>
+
+                <article>
+                    <span class="image">
+                        <img src="{{ asset("assets/images/local/actuality/nav.jpg") }}" alt="facebook" />
+                    </span>
+                    <header class="major">
+                        <h3><a href="" class="link">Actualité</a></h3>
+                        <p>ffffffff</p>
+                    </header>
+                </article>
+
+                <article>
+                    <span class="image">
+                        <img src="{{ asset("assets/images/local/actuality/nav.jpg") }}" alt="facebook" />
+                    </span>
+                    <header class="major">
+                        <h3><a href="" class="link">Actualité</a></h3>
+                        <p>ffffffff</p>
+                    </header>
+                </article>
+
+                <article>
+                    <span class="image">
+                        <img src="{{ asset("assets/images/local/actuality/nav.jpg") }}" alt="facebook" />
+                    </span>
+                    <header class="major">
+                        <h3><a href="" class="link">Actualité</a></h3>
+                        <p>ffffffff</p>
+                    </header>
+                </article>
             </section>
 
             <!-- Two -->
-            {#<section id="two">#}
-                {#<div class="inner">#}
-                    {#<header class="major">#}
-                        {#<h2>Massa libero</h2>#}
-                    {#</header>#}
-                    {#<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>#}
-                    {#<ul class="actions">#}
-                        {#<li><a href="landing.html" class="button next">Get Started</a></li>#}
-                    {#</ul>#}
-                {#</div>#}
+{#            <section id="two">#}
+{#                <div class="inner">#}
+{#                    <header class="major">#}
+{#                        <h2>Massa libero</h2>#}
+{#                    </header>#}
+{#                    <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>#}
+{#                    <ul class="actions">#}
+{#                        <li><a href="landing.html" class="button next">Get Started</a></li>#}
+{#                    </ul>#}
+{#                </div>#}
             {#</section>#}
 
         </div>
@@ -121,9 +152,4 @@
             {#</div>#}
         {#</section>#}
 
-{% endblock %}
-
-{% block stylesheets %}
-<style>
-</style>
 {% endblock %}
