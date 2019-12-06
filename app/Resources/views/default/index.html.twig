@@ -2,6 +2,10 @@
 
 {% block title %}Homepage{% endblock %}
 
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+
 {% block body %}
 
         <!-- Main -->
@@ -11,7 +15,7 @@
             <section id="one" class="tiles">
                 <article>
                     <span class="image">
-                        <img src="{{ asset("assets/images/local/actuality/nav.jpg") }}" alt="facebook" />
+                        <img src="{{ asset("assets/images/local/actuality/nav.jpg") }}" alt="actualities" />
                     </span>
                     <header class="major">
                         <h3><a href="{{ path('app_actuality') }}" class="link">Actualité</a></h3>
@@ -148,9 +152,4 @@
             {#</div>#}
         {#</section>#}
 
-{% endblock %}
-
-{% block stylesheets %}
-<style>
-</style>
 {% endblock %}
