@@ -91,9 +91,24 @@ class NavigationController extends Controller
         $editForm->handleRequest($request);
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {
+
+            /* KEEP PICTURE */
+            $imageForm = $editForm->get ('media');
+            $image = $imageForm->getData ();
+            $navigation->setMedia ($image);
+
+            if (isset($image)) {
+
+                /* GIVE NAME TO THE FILE : PREG_REPLACE PERMITS THE REMOVAL OF SPACES AND OTHER UNDESIRABLE CHARACTERS*/
+                $image->setName (preg_replace ('/\W/', '_', "image_" . uniqid ()));
+
+                // On appelle le service d'upload de média (AppBundle/Services/mediaInterface)
+                $this->get ('media.interface')->mediaUpload ($image);
+            }
+
             $this->getDoctrine()->getManager()->flush();
 
-            return $this->redirectToRoute('navigation_edit', array('id' => $navigation->getId()));
+            return $this->redirectToRoute('navigation_show', array('id' => $navigation->getId()));
         }
 
         return $this->render('navigation/edit.html.twig', array(
