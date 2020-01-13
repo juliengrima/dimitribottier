@@ -1,0 +1,75 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Cette saison{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('assets/stylesheet/multiverse/main.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/stylesheet/multiverse/noscript.css') }}" />
+{% endblock %}
+
+{% block body %}
+
+    <div id="wrapper">
+
+        <header id="header">
+            <h1><a href="https://html5up.net/"><strong>Multiverse</strong> by HTML5 UP</a></h1>
+            <nav class="ul-center">
+                <ul class="">
+                    <li><a href="{{ path('homepage')}}" class="">Retour</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/balmoarl_boucle-asymetrique.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/balmoarl_boucle-asymetrique.jpg') }}" alt="Balmoral_boucle_asy" /></a>
+                <h2>Balmora à boucle Asymétrique</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/botillon-marche.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/botillon-marche.jpg') }}" alt="Botillon_de_marche" /></a>
+                <h2>Botillon de marche</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/bottine_balmoral_bimatiere.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/bottine_balmoral_bimatiere.jpg') }}" alt="Bottine_balmo_bimat" /></a>
+                <h2>Bottine Balmora Bimatière</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/bottine_balmoral_boutons.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/bottine_balmoral_boutons.jpg') }}" alt="Bottine_balmo_boutons" /></a>
+                <h2>Bottine Balmora Boutons</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/brodequin_norvegien.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/brodequin_norvegien.jpg') }}" alt="brodequi_novegien" /></a>
+                <h2>Brodequin Norvégien</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/chausson_interieur.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/chausson_interieur.jpg') }}" alt="chausson interieur" /></a>
+                <h2>Chausson d'intérieur</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/chukka_boot.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/chukka_boot.jpg') }}" alt="chukka boot" /></a>
+                <h2>Chukka Boot</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/deby_plateau.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/deby_plateau.jpg') }}" alt="derby_plateau" /></a>
+                <h2>Derby Plateau</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/derby_fantaisie_antilope.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/derby_fantaisie_antilope.jpg') }}" alt="derby_fantaisie_antilope" /></a>
+                <h2>Derby Fantaisie en Antilope</h2>
+            </article>
+        </div>
+
+    </div>
+
+
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('assets/javascript/multiverse/jquery.min.js') }}"></script>
+    <script src="{{ asset('assets/javascript/multiverse/jquery.poptrox.min.js') }}"></script>
+    <script src="{{ asset('assets/javascript/multiverse/browser.min.js') }}"></script>
+    <script src="{{ asset('assets/javascript/multiverse/breakpoints.min.js') }}"></script>
+    <script src="{{ asset('assets/javascript/multiverse/util.js') }}"></script>
+    <script src="{{ asset('assets/javascript/multiverse/main.js') }}"></script>
+{% endblock %}

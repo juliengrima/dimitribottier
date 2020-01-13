@@ -14,4 +14,9 @@ class TailoredController extends Controller
 
         return $this->render('tailored/tailored.twig');
     }
+
+    public function tailoreGaleryAction (){
+
+        return $this->render('tailored/tailored_galery.twig');
+    }
 }

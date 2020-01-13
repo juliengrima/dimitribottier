@@ -37,9 +37,37 @@ app_actuality_leatherwork:
     path:     /actualite/peausseries
     defaults: { _controller: "AppBundle:Default:leatherwork" }
 
+#----------------------------------------------------------------------
+#                   TAILORED
+#----------------------------------------------------------------------
+
 app_tailored:
     path:     /sur_mesure
     defaults: { _controller: "AppBundle:Tailored:tailored" }
+
+app_tailored_galery:
+    path:     /sur_mesure/galerie
+    defaults: { _controller: "AppBundle:Tailored:tailoreGalery" }
+
+#----------------------------------------------------------------------
+#                   MANUFACTURING
+#----------------------------------------------------------------------
+
+app_line_galery:
+    path:     /ligne_bottier/galerie
+    defaults: { _controller: "AppBundle:line:lineGalery" }
+
+#----------------------------------------------------------------------
+#                   MANUFACTURING
+#----------------------------------------------------------------------
+
+app_manufacturing:
+    path:     /fabrication
+    defaults: { _controller: "AppBundle:manufacturing:manufacturing" }
+
+app_manufacturing_galery:
+    path:     /fabrication/galerie
+    defaults: { _controller: "AppBundle:manufacturing:manufacturingGalery" }
 
 ##########################################################
 ##########################################################

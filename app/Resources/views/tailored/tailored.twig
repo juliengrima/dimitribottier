@@ -4,75 +4,91 @@
 
 {% block stylesheets %}
     {{ parent() }}
+    <style>
+        .decal-left{
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+        .underline{
+            text-decoration: underline;
+        }
+    </style>
 {% endblock %}
 
 {% block body %}
 
     <!-- Two -->
     <section id="one">
-        <div class="inner align-center">
-            <div id="fb-root"></div>
-            <div class="fb-page" data-href="https://www.facebook.com/Dimitri-Gomez-Bottier-287965061251077/" data-tabs="events" data-width="1280" data-height="1024" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                <blockquote cite="https://www.facebook.com/Dimitri-Gomez-Bottier-287965061251077/" class="fb-xfbml-parse-ignore">
-                    <a href="https://www.facebook.com/Dimitri-Gomez-Bottier-287965061251077/">Dimitri Gomez Bottier</a>
-                </blockquote>
-            </div>
+        <div>
+            <h2 class="align-center">Sur Mesure</h2>
+            <p class="decal-left">La "Mesure"! L'aboutissement d'un parcours, l'ultime échelon sur l'échelle de valeurs des beaux souliers.</p>
+            <p class="decal-left">La mesure donne libre cours à votre imagination, à vos envies les plus folles. De la forme à monter qui vous sera exclusive,
+                au choix des peausseries utilisées, en passant par le "dessin" de la tige, tout tend à faire de votre soulier une pièce unique,
+                et précieuse. Précieuse surtout par la qualité et la précision avec lesquelles elle sera exécutée.
+                Chaque chaussure sur mesure reflète la quintessence d'un art, la maîtrise de l'artisan, enfin la profonde fierté
+               d'exercer un métier rare et noble.</p>
+           <p class="decal-left"> Prix : A partir de 3500€.<br>
+                Délai : De 4 à 6 mois.</p>
+
+            <h3 class="align-center underline"><a href="{{ path('app_tailored_galery') }}">Voir la Galerie</a></h3>
         </div>
     </section>
-    <section id="two" class="tiles">
-        <article>
-            <span class="image">
-                <img src="{{ asset("assets/images/local/actuality/saison/Actu1.jpg") }}" alt="cette_saison" />
-            </span>
-            <header class="major">
-                <h3><a href="{{ path('app_actuality_season') }}" class="link">Cette saison</a></h3>
-            </header>
-        </article>
-        <article>
-            <span class="image">
-                <img src="{{ asset("assets/images/local/actuality/ncreation/ncreation1.jpg") }}" alt="nouvelles_creation" />
-            </span>
-            <header class="major">
-                <h3><a href="{{ path('app_actuality_ncreation') }}" class="link">Nouvelles créations</a></h3>
-            </header>
-        </article>
-        <article>
-            <span class="image">
-                <img src="{{ asset("assets/images/local/actuality/nav.jpg") }}" alt="precedentes_creations" />
-            </span>
-            <header class="major">
-                <h3><a href="{{ path('app_actuality_pcreation') }}" class="link">Précédentes créations</a></h3>
-            </header>
-        </article>
-        <article>
-            <span class="image">
-                <img src="{{ asset("assets/images/local/actuality/exotic/exotic1.jpg") }}" alt="exotiques" />
-            </span>
-            <header class="major">
-                <h3><a href="{{ path('app_actuality_exotic') }}" class="link">Exotiques</a></h3>
-            </header>
-        </article>
-        <article>
-            <span class="image">
-                <img src="{{ asset("assets/images/local/actuality/inspiration/inspiration1.jpg") }}" alt="inspiration" />
-            </span>
-            <header class="major">
-                <h3><a href="{{ path('app_actuality_inspiration') }}" class="link">Inspiration</a></h3>
-                <p>Sortie tout droit du musée Crockett & Jones, cette paire de Balmoral est fabuleuse.
-                    Naviguant au milieu de nombreux "trésors" du passé provenant soit de Northampton,
-                    soit d'anciens bottiers parisiens tels Di Mauro, il est aisé de se laisser inspirer
-                    par ces petits chefs d'oeuvre du passé!</p>
-            </header>
-        </article>
-        <article>
-            <span class="image">
-                <img src="{{ asset("assets/images/local/actuality/leatherwork/leatherwork1.jpg") }}" alt="peausseries" />
-            </span>
-            <header class="major">
-                <h3><a href="{{ path('app_actuality_leatherwork') }}" class="link">Peausseries disponibles</a></h3>
-            </header>
-        </article>
-    </section>
+
+{#    <section id="two" class="tiles">#}
+{#        <article>#}
+{#            <span class="image">#}
+{#                <img src="{{ asset("assets/images/local/actuality/saison/Actu1.jpg") }}" alt="cette_saison" />#}
+{#            </span>#}
+{#            <header class="major">#}
+{#                <h3><a href="{{ path('app_actuality_ncreation') }}" class="link">Cette saison</a></h3>#}
+{#                <p>Brodequin croco</p>#}
+{#            </header>#}
+{#        </article>#}
+{#        <article>#}
+{#            <span class="image">#}
+{#                <img src="{{ asset("assets/images/local/actuality/ncreation/ncreation1.jpg") }}" alt="nouvelles_creation" />#}
+{#            </span>#}
+{#            <header class="major">#}
+{#                <h3><a href="{{ path('app_actuality_ncreation') }}" class="link">Nouvelles créations</a></h3>#}
+{#            </header>#}
+{#        </article>#}
+{#        <article>#}
+{#            <span class="image">#}
+{#                <img src="{{ asset("assets/images/local/actuality/nav.jpg") }}" alt="precedentes_creations" />#}
+{#            </span>#}
+{#            <header class="major">#}
+{#                <h3><a href="{{ path('app_actuality_pcreation') }}" class="link">Précédentes créations</a></h3>#}
+{#            </header>#}
+{#        </article>#}
+{#        <article>#}
+{#            <span class="image">#}
+{#                <img src="{{ asset("assets/images/local/actuality/exotic/exotic1.jpg") }}" alt="exotiques" />#}
+{#            </span>#}
+{#            <header class="major">#}
+{#                <h3><a href="{{ path('app_actuality_exotic') }}" class="link">Exotiques</a></h3>#}
+{#            </header>#}
+{#        </article>#}
+{#        <article>#}
+{#            <span class="image">#}
+{#                <img src="{{ asset("assets/images/local/actuality/inspiration/inspiration1.jpg") }}" alt="inspiration" />#}
+{#            </span>#}
+{#            <header class="major">#}
+{#                <h3><a href="{{ path('app_actuality_inspiration') }}" class="link">Inspiration</a></h3>#}
+{#                <p>Sortie tout droit du musée Crockett & Jones, cette paire de Balmoral est fabuleuse.#}
+{#                    Naviguant au milieu de nombreux "trésors" du passé provenant soit de Northampton,#}
+{#                    soit d'anciens bottiers parisiens tels Di Mauro, il est aisé de se laisser inspirer#}
+{#                    par ces petits chefs d'oeuvre du passé!</p>#}
+{#            </header>#}
+{#        </article>#}
+{#        <article>#}
+{#            <span class="image">#}
+{#                <img src="{{ asset("assets/images/local/actuality/leatherwork/leatherwork1.jpg") }}" alt="peausseries" />#}
+{#            </span>#}
+{#            <header class="major">#}
+{#                <h3><a href="{{ path('app_actuality_leatherwork') }}" class="link">Peausseries disponibles</a></h3>#}
+{#            </header>#}
+{#        </article>#}
+{#    </section>#}
 {% endblock %}
 
 {% block javascripts %}

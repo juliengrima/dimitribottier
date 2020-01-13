@@ -1,0 +1,189 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Cette saison{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('assets/stylesheet/multiverse/main.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/stylesheet/multiverse/noscript.css') }}" />
+{% endblock %}
+
+{% block body %}
+
+    <div id="wrapper">
+
+        <header id="header">
+            <h1><a href="https://html5up.net/"><strong>Multiverse</strong> by HTML5 UP</a></h1>
+            <nav class="ul-center">
+                <ul class="">
+                    <li><a href="{{ path('homepage')}}" class="">Retour</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/balmoarl_boucle-asymetrique.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/balmoarl_boucle-asymetrique.jpg') }}" alt="Balmoral_boucle_asy" /></a>
+                <h2>Balmora à boucle Asymétrique</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/botillon-marche.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/botillon-marche.jpg') }}" alt="Botillon_de_marche" /></a>
+                <h2>Botillon de marche</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/bottine_balmoral_bimatiere.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/bottine_balmoral_bimatiere.jpg') }}" alt="Bottine_balmo_bimat" /></a>
+                <h2>Bottine Balmora Bimatière</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/bottine_balmoral_boutons.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/bottine_balmoral_boutons.jpg') }}" alt="Bottine_balmo_boutons" /></a>
+                <h2>Bottine Balmora Boutons</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/brodequin_norvegien.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/brodequin_norvegien.jpg') }}" alt="brodequi_novegien" /></a>
+                <h2>Brodequin Norvégien</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/chausson_interieur.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/chausson_interieur.jpg') }}" alt="chausson interieur" /></a>
+                <h2>Chausson d'intérieur</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/chukka_boot.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/chukka_boot.jpg') }}" alt="chukka boot" /></a>
+                <h2>Chukka Boot</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/deby_plateau.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/deby_plateau.jpg') }}" alt="derby_plateau" /></a>
+                <h2>Derby Plateau</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/derby_fantaisie_antilope.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/derby_fantaisie_antilope.jpg') }}" alt="derby_fantaisie_antilope" /></a>
+                <h2>Derby Fantaisie en Antilope</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/derby_oeillet_croco_vegetal.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/derby_oeillet_croco_vegetal.jpg') }}" alt="derby_oeillets_croco" /></a>
+                <h2>Derby 2 Oeillets en Crocodile Végétal</h2>>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/derby_une_piece.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/derby_une_piece.jpg') }}" alt="derby_une_piece" /></a>
+                <h2>Derby une Pièce</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/escarpin_annees_20.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/escarpin_annees_20.jpg') }}" alt="escarpin_annees_30" /></a>
+                <h2>Escarpin Années 30</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/escarpin_lassage-cote.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/escarpin_lassage-cote.jpg') }}" alt="escarpin_lassage_cote" /></a>
+                <h2>Escarpin à lassage coté</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/loafer_bride1.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/loafer_bride1.jpg') }}" alt="loafer_bride1" /></a>
+                <h2>Loafer à Bride</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/loafer_bride2.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/loafer_bride2.jpg') }}" alt="loafer_bride2" /></a>
+                <h2>Loafer à Bride</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/mocassin_bride.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/mocassin_bride.jpg') }}" alt="mocassin_bride" /></a>
+                <h2>Mocassin à Bride</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/norvegien1.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/norvegien1.jpg') }}" alt="norvegien" /></a>
+                <h2>Norvégien</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/norvegien2.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/norvegien2.jpg') }}" alt="norvegien2" /></a>
+                <h2>Norvégien</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/norvegienfrange1.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/norvegienfrange1.jpg') }}" alt="norvegien_frange" /></a>
+                <h2>Derby Norvégien</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/penny_loafer_lac_pince.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/penny_loafer_lac_pince.jpg') }}" alt="penny_loafer_lac_pince" /></a>
+                <h2>Penny Loafer à lac pincé main</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/princedegalles_derby.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/princedegalles_derby.jpg') }}" alt="prince_de_galles_derby" /></a>
+                <h2>Derby "Prince de Galles"</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/princedegalles_croco_derby.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/princedegalles_croco_derby.jpg') }}" alt="derby_croco_prince_de_galles" /></a>
+                <h2>Derby Crocodile "Prince de Galles"</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/princedegalles_veau-force_11-13.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/princedegalles_veau-force_11-13.jpg') }}" alt="veau_prince_de_galles" /></a>
+                <h2>Veau de force 11-13 "Prince de Galles"</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/princedegalles_vocalou_tanneries.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/princedegalles_vocalou_tanneries.jpg') }}" alt="vocalou_des_tanneries" /></a>
+                <h2>En "Vocalou" des Tanneries</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/richelieu_bout_droit.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/richelieu_bout_droit.jpg') }}" alt="richelieu_bout_droit" /></a>
+                <h2>Richelieu Bout Droit</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/strap_loafer.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/strap_loafer.jpg') }}" alt="strap_loafer" /></a>
+                <h2>Strap Loafer</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/tassel_loafer.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/tassel_loafer.jpg') }}" alt="tassel_loafer" /></a>
+                <h2>Tassel Loafer</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/tailored1.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/tailored1.jpg') }}" alt="croco_rose" /></a>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/CIMG0384.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/CIMG0384.jpg') }}" alt="cimg0384" /></a>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/CIMG0396.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/CIMG0396.jpg') }}" alt="cimg0396" /></a>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/CIMG0397.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/CIMG0397.jpg') }}" alt="cimg0397" /></a>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/CIMG0502.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/CIMG0502.jpg') }}" alt="cimg0502" /></a>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/CIMG0512.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/CIMG0512.jpg') }}" alt="cimg0512" /></a>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/CIMG0513.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/CIMG0513.jpg') }}" alt="cimg0513" /></a>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/CIMG1228.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/CIMG1228.jpg') }}" alt="cimg1228" /></a>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/CIMG1281.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/CIMG1281.jpg') }}" alt="cimg1281" /></a>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/Photo_002.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/Photo_002.jpg') }}" alt="photo002" /></a>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/Photo_004.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/Photo_004.jpg') }}" alt="photo004" /></a>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/Photo_006.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/Photo_006.jpg') }}" alt="photo006" /></a>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/Photo_016.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/Photo_016.jpg') }}" alt="photo016" /></a>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/tailored/Photo_043.jpg') }}" class="image"><img src="{{ asset('assets/images/local/tailored/Photo_043.jpg') }}" alt="photo043" /></a>
+            </article>
+        </div>
+
+    </div>
+
+
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('assets/javascript/multiverse/jquery.min.js') }}"></script>
+    <script src="{{ asset('assets/javascript/multiverse/jquery.poptrox.min.js') }}"></script>
+    <script src="{{ asset('assets/javascript/multiverse/browser.min.js') }}"></script>
+    <script src="{{ asset('assets/javascript/multiverse/breakpoints.min.js') }}"></script>
+    <script src="{{ asset('assets/javascript/multiverse/util.js') }}"></script>
+    <script src="{{ asset('assets/javascript/multiverse/main.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,103 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}actualités{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        .decal-left{
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+        .underline{
+            text-decoration: underline;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+
+    <!-- Two -->
+    <section id="one">
+        <div>
+            <h2 class="align-center">Fabrication d'un soulier sur mesure</h2>
+        </div>
+    </section>
+
+    <section id="two" class="tiles">
+        <article>
+            <span class="image">
+                <img src="{{ asset("assets/images/local/actuality/saison/Actu1.jpg") }}" alt="cette_saison" />
+            </span>
+            <header class="major">
+                <h3>Mesure</h3>
+                <p>Brodequin croco</p>
+            </header>
+        </article>
+        <article>
+            <span class="image">
+                <img src="{{ asset("assets/images/local/actuality/ncreation/ncreation1.jpg") }}" alt="nouvelles_creation" />
+            </span>
+            <header class="major">
+                <h3>Forme</h3>
+            </header>
+        </article>
+        <article>
+            <span class="image">
+                <img src="{{ asset("assets/images/local/actuality/nav.jpg") }}" alt="precedentes_creations" />
+            </span>
+            <header class="major">
+                <h3>Patronnage</h3>
+            </header>
+        </article>
+        <article>
+            <span class="image">
+                <img src="{{ asset("assets/images/local/actuality/exotic/exotic1.jpg") }}" alt="exotiques" />
+            </span>
+            <header class="major">
+                <h3>Chausson</h3>
+            </header>
+        </article>
+        <article>
+            <span class="image">
+                <img src="{{ asset("assets/images/local/actuality/inspiration/inspiration1.jpg") }}" alt="inspiration" />
+            </span>
+            <header class="major">
+                <h3><a href="{{ path('app_actuality_inspiration') }}" class="link">Coupe de la tige</a></h3>
+                <p>Sortie tout droit du musée Crockett & Jones, cette paire de Balmoral est fabuleuse.
+                    Naviguant au milieu de nombreux "trésors" du passé provenant soit de Northampton,
+                    soit d'anciens bottiers parisiens tels Di Mauro, il est aisé de se laisser inspirer
+                    par ces petits chefs d'oeuvre du passé!</p>
+            </header>
+        </article>
+        <article>
+            <span class="image">
+                <img src="{{ asset("assets/images/local/actuality/leatherwork/leatherwork1.jpg") }}" alt="peausseries" />
+            </span>
+            <header class="major">
+                <h3>Piquage</h3>
+            </header>
+        </article>
+        <article>
+            <span class="image">
+                <img src="{{ asset("assets/images/local/actuality/leatherwork/leatherwork1.jpg") }}" alt="peausseries" />
+            </span>
+            <header class="major">
+                <h3><a href="{{ path('app_actuality_leatherwork') }}" class="link">Montage</a></h3>
+            </header>
+        </article>
+        <article>
+            <span class="image">
+                <img src="{{ asset("assets/images/local/actuality/leatherwork/leatherwork1.jpg") }}" alt="peausseries" />
+            </span>
+            <header class="major">
+                <h3>Finissage</h3>
+            </header>
+        </article>
+    </section>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v5.0"></script>
+{% endblock %}
