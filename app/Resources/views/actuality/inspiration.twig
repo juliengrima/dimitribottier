@@ -5,139 +5,43 @@
 {% block stylesheets %}
     <link rel="stylesheet" href="{{ asset('assets/stylesheet/multiverse/main.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/stylesheet/multiverse/noscript.css') }}" />
+
+    <style>
+        .inspiration-size{
+            width : 50%;
+            height: 50%;
+        }
+    </style>
 {% endblock %}
 
 {% block body %}
 
-    <div id="wrapper">
+     <div id="wrapper">
 
-        <!-- Header -->
         <header id="header">
-            <h1><a href="index.html"><strong>Multiverse</strong> by HTML5 UP</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="{{ path('app_actuality')}}" class="icon solid fa-info-circle">Retour</a></li>
-                    <li><a href="#footer" class="icon solid fa-info-circle">Nouvelles créations</a></li>
-                    <li><a href="#footer" class="icon solid fa-info-circle">Précédentes creations</a></li>
-                    <li><a href="#footer" class="icon solid fa-info-circle">Exotiques</a></li>
-                    <li><a href="#footer" class="icon solid fa-info-circle">Inspiration</a></li>
-                    <li><a href="#footer" class="icon solid fa-info-circle">Peausseries disponibles</a></li>
+            <h1><a href="https://html5up.net/"><strong>Multiverse</strong> by HTML5 UP</a></h1>
+            <nav class="ul-center">
+                <ul class="">
+                    <li><a href="{{ path('app_actuality')}}" class="">Retour</a></li>
                 </ul>
             </nav>
         </header>
 
-        <!-- Main -->
-        <div id="main">
-            <article class="thumb">
-                <a href="{{ asset('assets/images/local/actuality/saison/Actu1.jpg') }}" class="image"><img src="{{ asset('assets/images/local/actuality/saison/Actu1.jpg') }}" alt="actu2" /></a>
-{#                <h2>Magna feugiat lorem</h2>#}
-{#                <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>#}
-            </article>
-            <article class="thumb">
-                <a href="{{ asset('assets/images/local/actuality/saison/Actu2.jpg') }}" class="image"><img src="{{ asset('assets/images/local/actuality/saison/Actu2.jpg') }}" alt="actu2" /></a>
-{#                <h2>Magna feugiat lorem</h2>#}
-{#                <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>#}
-            </article>
-            <article class="thumb">
-                <a href="{{ asset('assets/images/local/actuality/saison/Actu3.jpg') }}" class="image"><img src="{{ asset('assets/images/local/actuality/saison/Actu3.jpg') }}" alt="actu2" /></a>
-{#                <h2>Magna feugiat lorem</h2>#}
-{#                <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>#}
-            </article>
-            <article class="thumb">
-                <a href="{{ asset('assets/images/local/actuality/saison/Actu4.jpg') }}" class="image"><img src="{{ asset('assets/images/local/actuality/saison/Actu4.jpg') }}" alt="actu2" /></a>
-{#                <h2>Magna feugiat lorem</h2>#}
-{#                <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>#}
-            </article>
-            <article class="thumb">
-                <a href="{{ asset('assets/images/local/actuality/saison/Actu5.jpg') }}" class="image"><img src="{{ asset('assets/images/local/actuality/saison/Actu5.jpg') }}" alt="actu2" /></a>
-{#                <h2>Magna feugiat lorem</h2>#}
-{#                <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>#}
-            </article>
-            <article class="thumb">
-                <a href="{{ asset('assets/images/local/actuality/saison/Actu6.jpg') }}" class="image"><img src="{{ asset('assets/images/local/actuality/saison/Actu6.jpg') }}" alt="actu2" /></a>
-{#                <h2>Magna feugiat lorem</h2>#}
-{#                <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>#}
-            </article>
-            <article class="thumb">
-                <a href="{{ asset('assets/images/local/actuality/saison/Actu7.jpg') }}" class="image"><img src="{{ asset('assets/images/local/actuality/saison/Actu7.jpg') }}" alt="actu2" /></a>
-{#                <h2>Magna feugiat lorem</h2>#}
-{#                <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>#}
-            </article>
-            <article class="thumb">
-                <a href="{{ asset('assets/images/local/actuality/saison/Actu8.jpg') }}" class="image"><img src="{{ asset('assets/images/local/actuality/saison/Actu8.jpg') }}" alt="actu2" /></a>
-{#                <h2>Magna feugiat lorem</h2>#}
-{#                <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>#}
-            </article>
-            <article class="thumb">
-                <a href="{{ asset('assets/images/local/actuality/saison/Actu9.jpg') }}" class="image"><img src="{{ asset('assets/images/local/actuality/saison/Actu9.jpg') }}" alt="actu2" /></a>
-{#                <h2>Magna feugiat lorem</h2>#}
-{#                <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>#}
-            </article>
-            <article class="thumb">
-                <a href="{{ asset('assets/images/local/actuality/saison/Actu10.jpg') }}" class="image"><img src="{{ asset('assets/images/local/actuality/saison/Actu10.jpg') }}" alt="actu2" /></a>
-{#                <h2>Magna feugiat lorem</h2>#}
-{#                <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>#}
-            </article>
-        </div>
-
-        <!-- Footer -->
-        <footer id="footer" class="panel">
-            <div class="inner split">
+        <section id="one">
+            <div class="inner align-center">
                 <div>
-                    <section>
-                        <h2>Magna feugiat sed adipiscing</h2>
-                        <p>Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum eget quis orci mattis aliquet. Maecenas fringilla et ante at lorem et ipsum. Dolor nulla eu bibendum sapien. Donec non pharetra dui. Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum.</p>
-                    </section>
-                    <section>
-                        <h2>Follow me on ...</h2>
-                        <ul class="icons">
-                            <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                            <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                            <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                            <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                            <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-                            <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-                        </ul>
-                    </section>
-                    <p class="copyright">
-                        &copy; Unttled. Design: <a href="http://html5up.net">HTML5 UP</a>.
-                    </p>
-                </div>
-                <div>
-                    <section>
-                        <h2>Get in touch</h2>
-                        <form method="post" action="#">
-                            <div class="fields">
-                                <div class="field half">
-                                    <input type="text" name="name" id="name" placeholder="Name" />
-                                </div>
-                                <div class="field half">
-                                    <input type="text" name="email" id="email" placeholder="Email" />
-                                </div>
-                                <div class="field">
-                                    <textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
-                                </div>
-                            </div>
-                            <ul class="actions">
-                                <li><input type="submit" value="Send" class="primary" /></li>
-                                <li><input type="reset" value="Reset" /></li>
-                            </ul>
-                        </form>
-                    </section>
+                    <span class="image">
+                    <img src="{{ asset("assets/images/local/actuality/inspiration/inspiration1.jpg") }}" alt="actualities" class="inspiration-size" />
+                </span>
                 </div>
             </div>
-        </footer>
+        </section>
 
-    </div>
-
+     </div>
 
 {% endblock %}
 
 {% block javascripts %}
-    <script src="{{ asset('assets/javascript/multiverse/jquery.min.js') }}"></script>
-    <script src="{{ asset('assets/javascript/multiverse/jquery.poptrox.min.js') }}"></script>
-    <script src="{{ asset('assets/javascript/multiverse/browser.min.js') }}"></script>
-    <script src="{{ asset('assets/javascript/multiverse/breakpoints.min.js') }}"></script>
-    <script src="{{ asset('assets/javascript/multiverse/util.js') }}"></script>
-    <script src="{{ asset('assets/javascript/multiverse/main.js') }}"></script>
+    {{ parent() }}
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v5.0"></script>
 {% endblock %}

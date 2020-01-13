@@ -37,6 +37,10 @@ app_actuality_leatherwork:
     path:     /actualite/peausseries
     defaults: { _controller: "AppBundle:Default:leatherwork" }
 
+app_tailored:
+    path:     /sur_mesure
+    defaults: { _controller: "AppBundle:Tailored:tailored" }
+
 ##########################################################
 ##########################################################
 #################### Admin Panel #########################
