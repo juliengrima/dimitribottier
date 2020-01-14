@@ -1,0 +1,73 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}actualités{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        .decal-left{
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+        .underline{
+            text-decoration: underline;
+        }
+        .text-size{
+            font-size: 0.6em!important;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+
+    <!-- Two -->
+    <section id="one">
+        <div>
+            <h2 class="align-center">Laissés pour Compte</h2>
+        </div>
+    </section>
+
+    <section id="two" class="tiles">
+        <article>
+            <span class="image">
+                <img src="{{ asset("assets/images/local/uncollected/uncollected10.jpg") }}" alt="escarpin une piece" />
+            </span>
+            <header class="major">
+                <h3><a href="{{ path('app_left_over_galery_escaprin') }}" class="link">ESCARPIN UNE PIECE</a></h3>
+                <p>Box-Calf Marron moyen</p>
+                <p>Taille 43</p>
+                <p>Tarif initial de 4500 €</p>
+                <p>Tarif actuel: 1000 €</p>
+            </header>
+        </article>
+        <article>
+            <span class="image">
+                <img src="{{ asset("assets/images/local/uncollected/uncollected20.jpg") }}" alt="Richelieu Bout Rapporté fleuri" />
+            </span>
+            <header class="major">
+                <h3><a href="{{ path('app_left_over_galery_richelieu') }}" class="link">Richelieu Bout Rapporté fleuri</a></h3>
+                <p>Box-Calf noir</p>
+                <p>Taille 43</p>
+                <p> Tarif initial de 3500 €</p>
+                <p>  Tarif actuel: 1000 €</p>
+            </header>
+        </article>
+        <article>
+            <span class="image">
+                <img src="{{ asset("assets/images/local/uncollected/uncollected50.jpg") }}" alt="Chukka Boot" />
+            </span>
+            <header class="major">
+                <h3><a href="{{ path('app_left_over_galery_chukka') }}" class="link">Chukka Boot</a></h3>
+                <p>Box-Calf Noir</p>
+                <p> Taille 39</p>
+                <p> Tarif initial de 3500 €</p>
+                <p> Tarif actuel: 1000 €</p>
+            </header>
+        </article>
+    </section>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v5.0"></script>
+{% endblock %}

@@ -69,6 +69,42 @@ app_manufacturing_galery:
     path:     /fabrication/galerie
     defaults: { _controller: "AppBundle:manufacturing:manufacturingGalery" }
 
+#----------------------------------------------------------------------
+#                   LEFT OVER
+#----------------------------------------------------------------------
+
+app_left_over:
+    path:     /laisses_pour_compte
+    defaults: { _controller: "AppBundle:LeftOver:leftOver" }
+
+app_left_over_galery_escaprin:
+    path:     /laisses_pour_compte/escarpin
+    defaults: { _controller: "AppBundle:LeftOver:leftOverGalery1" }
+
+app_left_over_galery_richelieu:
+    path:     /laisses_pour_compte/richelieu
+    defaults: { _controller: "AppBundle:LeftOver:leftOverGalery2" }
+
+app_left_over_galery_chukka:
+    path:     /laisses_pour_compte/chukka
+    defaults: { _controller: "AppBundle:LeftOver:leftOverGalery3" }
+
+#----------------------------------------------------------------------
+#                   CONTACT
+#----------------------------------------------------------------------
+
+app_contact:
+    path:     /contact
+    defaults: { _controller: "AppBundle:contact:contact" }
+
+#----------------------------------------------------------------------
+#                   Legal Notice
+#----------------------------------------------------------------------
+
+app_legal_notice:
+    path:     /mention
+    defaults: { _controller: "AppBundle:contact:notice" }
+
 ##########################################################
 ##########################################################
 #################### Admin Panel #########################

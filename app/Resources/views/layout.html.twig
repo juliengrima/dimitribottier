@@ -22,12 +22,12 @@
                 <li><a href="{{ path('homepage') }}">Accueil</a></li>
                 <li><a href="{{ path('app_actuality') }}" class="link">Actualité</a></li>
                 <li><a href="{{ path('app_tailored_galery') }}" class="link">Sur Mesure</a></li>
-                <li><a href="{{ path('app_actuality') }}" class="link">Ligne Bottier</a></li>
-                <li><a href="{{ path('app_actuality') }}" class="link">Fabrication</a></li>
-                <li><a href="{{ path('app_actuality') }}" class="link">Laissés pour Compte</a></li>
+                <li><a href="{{ path('app_line_galery') }}" class="link">Ligne Bottier</a></li>
+                <li><a href="{{ path('app_manufacturing') }}" class="link">Fabrication</a></li>
+                <li><a href="{{ path('app_left_over') }}" class="link">Laissés pour Compte</a></li>
             </ul>
             <ul class="actions stacked">
-                <li><a href="#" class="button primary fit">Contact</a></li>
+                <li><a href="{{ path('app_contact') }}" class="button primary fit">Contact</a></li>
             </ul>
         </nav>
 
@@ -70,8 +70,8 @@
                     <li><a href="#" class="icon alt"><span class="label">LinkedIn</span><i class="fab fa-linkedin-in"></i></a></li>
                 </ul>
                 <ul class="copyright">
-                    <li><a href="">Mentions légales</a></li>
-                    <li><a href="#">&copy;</a> - KeepConnection</li>
+                    <li><a href="{{ path('app_legal_notice') }}">Mentions légales</a></li>
+                    <li><a href="http://www.groupe-tse.fr/ecotoner/">&copy;</a>Tous droits réservés - KeepConnection</li>
                     <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
                 </ul>
             </div>

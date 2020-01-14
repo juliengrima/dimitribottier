@@ -1,0 +1,112 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Homepage{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        .image-size{
+            width: 60%;
+            height: 60%;
+        }
+        .image-size-split{
+            margin-top: 30%;
+            width: 120%;
+            height: 120%;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+
+    <!-- Main -->
+    <div id="main">
+        <section id="one">
+            <div>
+                <h2 class="align-center">Contact</h2>
+                <p class="align-center">Sur rendez-vous du lundi au samedi.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="inner">
+            <section>
+                <div>
+                    <img src="{{ asset('assets/images/local/contact/contact.jpg') }}" class="image-size">
+                </div>
+            </section>
+            <section class="split">
+                <section>
+                    <div class="contact-method">
+                        <span class="icon alt fa-envelope"></span>
+                        <h3>Email</h3>
+                        <ul>
+                            <li><a href="mailto:dimitribottier@outlook.com">dimitribottier@outlook.com</a></li>
+                            <li><a href="mailto:contact@dimitribottier.com">contact@dimitribottier.com</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <div class="contact-method">
+                        <span class="icon alt fa-phone"></span>
+                        <h3>Téléphone</h3>
+                        <ul>
+                            <li><a href="tel:+33144940174">Tél: +33 (0)1 44 94 01 74</a></li>
+                            <li><a href="tel:+33613514121">Mobile: +33 (0)6 13 51 41 21</a></li>
+                            <li>Fax: +33 (0)1 44 94 01 72</li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <div class="contact-method">
+                        <span class="icon alt fa-home"></span>
+                        <h3>Addresse</h3>
+                        <span>Atelier<br>
+                            c/o Crockett & Jones<br>
+                            14, rue Chauveau-Lagarde,<br>
+                            75008 Paris FRANCE</span>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <div id="main">
+        <section id="two">
+            <div>
+                <h2 class="align-center">Liens</h2>
+            </div>
+        </section>
+    </div>
+
+    <!-- Two -->
+    <section id="contact">
+        <div class="inner">
+            <section>
+                <header class="major">
+                    <h4>Crockett & Jones</h4>
+                </header>
+                <p>Depuis sa création il y a 125 ans, <a href="https://www.crockettandjones.com/where-to-buy/la-madeleine" class="links">Crockett & Jones</a> a conçu et fabriqué les chaussures
+                    des plus grands noms, mettant à leur service un savoir-faire d'exception. En 1996,
+                    Crockett and Jones apparaît sur le devant de la scène et ouvre sa première boutique à
+                    Londres au cœur du quartier des tailleurs, haut-lieu de l'élégance britannique. Aujourd'hui,
+                    la marque a su s'imposer en France par le style sobre et raffiné et la conception irréprochable de
+                    ses modèles.</p>
+                <header class="major">
+                    <h4>Marc Guyot</h4>
+                </header>
+                <p><a href="http://www.marcguyot.com/">Marc Guyot</a>, créateur parisien, propose dans sa boutique des collections directement inspirées du vêtement américain des
+                   années 30, en prêt-à-porter, en demi-mesure ou en sur mesure traditionnel ainsi qu'une
+                   ligne de souliers et d'accessoires aux finitions main. </p>
+            </section>
+            <section class="split">
+                <div>
+                    <img src="{{ asset('assets/images/local/contact/contact2.jpg') }}" class="image-size-split">
+                </div>
+            </section>
+        </div>
+    </section>
+{% endblock %}
