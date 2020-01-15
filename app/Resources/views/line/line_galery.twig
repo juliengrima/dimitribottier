@@ -1,0 +1,76 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Cette saison{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('assets/stylesheet/multiverse/main.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/stylesheet/multiverse/noscript.css') }}" />
+{% endblock %}
+
+{% block body %}
+
+    <div id="wrapper">
+
+        <header id="header">
+            <h1><a href="https://html5up.net/"><strong>Multiverse</strong> by HTML5 UP</a></h1>
+            <nav class="ul-center">
+                <ul class="">
+                    <li><a href="{{ path('homepage')}}" class="">Retour</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/line/derby_boucle.jpg') }}" class="image"><img src="{{ asset('assets/images/local/line/derby_boucle.jpg') }}" alt="derby_boucle" /></a>
+                <h2>Derby à boucle</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/line/derby_prince_de_galles.jpg') }}" class="image"><img src="{{ asset('assets/images/local/line/derby_prince_de_galles.jpg') }}" alt="derby_prince_de_galles" /></a>
+                <h2>Derby Prince de Galles</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/line/escarpin_4_oeillets.jpg') }}" class="image"><img src="{{ asset('assets/images/local/line/escarpin_4_oeillets.jpg') }}" alt="escarpin_4_oeillets" /></a>
+                <h2>escarpin 4 oeillets</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/line/escarpin_balmoral.jpg') }}" class="image"><img src="{{ asset('assets/images/local/line/escarpin_balmoral.jpg') }}" alt="escarpin_balmoral" /></a>
+                <h2>Escarpin Balmoral</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/line/richelieu_bout_droit.jpg') }}" class="image"><img src="{{ asset('assets/images/local/line/richelieu_bout_droit.jpg') }}" alt="richelieu_bout_droit" /></a>
+                <h2>Richelieux à bout droit</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/line/richelieu_bout_droit_fantaisie.jpg') }}" class="image"><img src="{{ asset('assets/images/local/line/richelieu_bout_droit_fantaisie.jpg') }}" alt="richelieu_bout_droit_fantaisie" /></a>
+                <h2>Richelieu à bout droit fantaisie</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/line/richelieu_bout_golf_fantaisie.jpg') }}" class="image"><img src="{{ asset('assets/images/local/line/richelieu_bout_golf_fantaisie.jpg') }}" alt="richelieu_bout_golf_fantaisie" /></a>
+                <h2>Richelieu à bout golf fantaisie</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/line/richelieu_velours_bout_rapporte.jpg') }}" class="image"><img src="{{ asset('assets/images/local/line/richelieu_velours_bout_rapporte.jpg') }}" alt="richelieu_velour_bout_rapporte" /></a>
+                <h2>Reichelieu velourà bout rappoté</h2>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/line/line1.jpg') }}" class="image"><img src="{{ asset('assets/images/local/line/line1.jpg') }}" alt="ligne_bottier1" /></a>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/line/line2.jpg') }}" class="image"><img src="{{ asset('assets/images/local/line/line2.jpg') }}" alt="ligne_bottier2" /></a>
+            </article>
+        </div>
+
+    </div>
+
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('assets/javascript/multiverse/jquery.min.js') }}"></script>
+    <script src="{{ asset('assets/javascript/multiverse/jquery.poptrox.min.js') }}"></script>
+    <script src="{{ asset('assets/javascript/multiverse/browser.min.js') }}"></script>
+    <script src="{{ asset('assets/javascript/multiverse/breakpoints.min.js') }}"></script>
+    <script src="{{ asset('assets/javascript/multiverse/util.js') }}"></script>
+    <script src="{{ asset('assets/javascript/multiverse/main.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Cette saison{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('assets/stylesheet/multiverse/main.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/stylesheet/multiverse/noscript.css') }}" />
+{% endblock %}
+
+{% block body %}
+
+    <div id="wrapper">
+
+        <header id="header">
+            <h1><a href="https://html5up.net/"><strong>Multiverse</strong> by HTML5 UP</a></h1>
+            <nav class="ul-center">
+                <ul class="">
+                    <li><a href="{{ path('app_left_over')}}" class="">Retour</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/uncollected/uncollected11.jpg') }}" class="image"><img src="{{ asset('assets/images/local/uncollected/uncollected11.jpg') }}" alt="Escarpin Une Pièce" /></a>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/uncollected/uncollected12.jpg') }}" class="image"><img src="{{ asset('assets/images/local/uncollected/uncollected12.jpg') }}" alt="Escarpin Une Pièce" /></a>
+            </article>
+            <article class="thumb">
+                <a href="{{ asset('assets/images/local/uncollected/uncollected13.jpg') }}" class="image"><img src="{{ asset('assets/images/local/uncollected/uncollected13.jpg') }}" alt="Escarpin Une Pièce" /></a>
+            </article>
+        </div>
+
+    </div>
+
+
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('assets/javascript/multiverse/jquery.min.js') }}"></script>
+    <script src="{{ asset('assets/javascript/multiverse/jquery.poptrox.min.js') }}"></script>
+    <script src="{{ asset('assets/javascript/multiverse/browser.min.js') }}"></script>
+    <script src="{{ asset('assets/javascript/multiverse/breakpoints.min.js') }}"></script>
+    <script src="{{ asset('assets/javascript/multiverse/util.js') }}"></script>
+    <script src="{{ asset('assets/javascript/multiverse/main.js') }}"></script>
+{% endblock %}

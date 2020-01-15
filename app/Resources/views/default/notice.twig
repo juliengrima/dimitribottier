@@ -1,0 +1,89 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Homepage{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        .image-size{
+            width: 60%;
+            height: 60%;
+        }
+        .image-size-split{
+            margin-top: 30%;
+            width: 120%;
+            height: 120%;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+
+    <!-- Main -->
+    <div id="main">
+        <section id="one">
+            <div>
+                <h2 class="align-center">Mentions Légales</h2>
+            </div>
+        </section>
+    </div>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="inner">
+            <section>
+                <div>
+                   <h3>EDITEUR</h3>
+                    <p>Vous êtes actuellement connecté au site Web
+                        officiel de DIMITRI GOMEZ.</p>
+                    <p>Directeur de la publication : <a href="mailto:contact@dimitribottier.com">Dimitri Gomez</a>
+                        <br>
+                        Administrateur du site Web : <a href="mailto:ludovic@ecotoner.fr">Keep Connection</a>
+                        <br>
+                        Designer du site : <a href="https://html5up.net/">HTML5 UP</a> </p>
+                    <p>Ce site a fait l'objet d'une demande d'autorisation auprès de la CNIL. Pour toute remarque
+                        sur le fonctionnement du site, écrivez à l'administrateur du site.</p>
+                </div>
+                <div>
+                    <h3>Informations nominatives</h3>
+                    <p>Les informations nominatives figurant sur ce site, ou collectées par le moyen des formulaires « en ligne »,
+                        sont collectées dans les conditions prévues par la loi française « informatique et libertés » du 6 janvier 1978.
+                        Toute personne ayant fourni ces données dispose d'un droit d'accès, de modification, de rectification et de
+                        suppression des données en adressant un mail à l’administrateur du site.</p>
+                </div>
+                <div>
+                    <h3>Crédits</h3>
+                    <p>Ce site a été développé par <a href="http://www.groupe-tse.fr/ecotoner/">KEEP CONNECTION</a>
+                        avec sa solution <a href="https://symfony.com/">SYMFONY</a>
+                        et designé par <a href="https://html5up.net/">HTML5 UP</a> </p>
+                </div>
+            </section>
+            <section class="split">
+                <section>
+                    <div class="contact-method">
+                        <span></span>
+                        <h3>DROIT D'AUTEUR ET RESPONSABILITE</h3>
+                        <p>Les informations contenues dans ce site sont soumises à la loi française et sont fournies sans garantie d'aucune sorte,
+                            ni explicite ni tacite. Ces informations peuvent contenir des inexactitudes techniques ou des erreurs typographiques.
+                            Elles sont non contractuelles et sujettes à modification sans préavis.</p>
+                        <p>L'ensemble des contenus, pages, scripts, icônes et sons de ce site sont la propriété exclusive de DIMITRI GOMEZ ou des
+                            détenteurs de droits mentionnés "HTML5 UP". Toute production, reproduction ou représentation de ce site, en tout ou partie (textes, sons ou images),
+                            sur quelque support que ce soit est interdite. Le non respect de cette interdiction constitue une contrefaçon pouvant engager
+                            la responsabilité civile et pénale du contrefacteur. Il est strictement interdit d'utiliser ou de reproduire le nom DIMITRI GOMEZ,
+                            ainsi que tout logo et visuel DIMITRI GOMEZ, seuls ou associés, à quelque titre que ce soit.</p>
+                        <p>DIMITRI GOMEZ n'est pas responsable du contenu de tout autre site auquel vous pourriez avoir accès via le site officiel de DIMITRI GOMEZ.
+                            Il est expressément entendu par l'utilisateur de ce site qu'en aucun cas DIMITRI GOMEZ ne peut être tenu responsable des dommages quelconques,
+                            directs ou indirects, matériels ou immatériels ou spéciaux, résultant notamment de la consultation et/ou de l'utilisation de ce site Web ou
+                            d'autres sites qui lui sont liés, comme des utilisations d'informations textuelles, sonores ou visuelles qui auraient pu y être recueillies et
+                            notamment de tout préjudice financier ou commercial, de pertes de programmes ou de données dans son système d'information ou autre.</p>
+                        <p>En l'absence de tout engagement contractuel, DIMITRI GOMEZ peut à tout moment supprimer toute information ou toute référence sur son site ou
+                            même suspendre ledit site et ce discrétionnairement et sans préavis.</p>
+                        <p>Les bases de données figurant sur le serveur Internet sont protégées par la loi du 1er juillet 1998</p>
+                    </div>
+                </section>
+
+            </section>
+        </div>
+    </section>
+
+{% endblock %}

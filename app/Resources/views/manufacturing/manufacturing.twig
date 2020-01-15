@@ -1,0 +1,127 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}actualités{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        .decal-left{
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+        .underline{
+            text-decoration: underline;
+        }
+        .text-size{
+            font-size: 0.6em!important;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+
+    <!-- Two -->
+    <section id="one">
+        <div>
+            <h2 class="align-center">Fabrication d'un soulier sur mesure</h2>
+        </div>
+    </section>
+
+    <section id="two" class="tiles">
+        <article>
+            <span class="image">
+                <img src="{{ asset("assets/images/local/manufacturing/manufac1.jpg") }}" alt="mesure" />
+            </span>
+            <header class="major">
+                <h3>Prise de mesure</h3>
+                <p>Pour réaliser vos souliers, Dimitri effectue en premier lieu la prise de mesure de vos pieds.</p>
+                <p>Il en dessine tout d’abord le contour en suivant la forme avec un crayon tenu à 90°, condition
+                    sine qua non pour un repérage parfait. Il indique ensuite sur ces relevés les emplacements des
+                    phalanges, des métatarses et note les éventuelles saillies. </p>
+                <p>Il mesure enfin au millimètre près l’axe, le périmètre, la hauteur, la largeur et la longueur
+                    des deux pieds, des coups de pied, des gros orteils et de chaque articulation.</p>
+            </header>
+        </article>
+        <article>
+            <span class="image">
+                <img src="{{ asset("assets/images/local/manufacturing/formesamonter.jpg") }}" alt="forme_montage" />
+            </span>
+            <header class="major">
+                <h3>Réalisation de la forme</h3>
+                <p class="text-size">La forme est une réplique de votre pied. Dimitri la réalise en bois à partir de vos mesures. Elle est différente
+                    pour chaque modèle que vous souhaitez faire réaliser.
+                    Après avoir pris vos mesures et l'empreinte de votre pied qui définit la répartition du poids de votre corps,
+                    Dimitri évalue la symétrie des orteils, calibre le tour du cou-de-pied et la saillie des orteils, calcule la hauteur
+                    du gros orteil et la cambrure du cou-de-pied, critères essentiels pour assurer un confort absolu à votre soulier.</p>
+                <p class="text-size">Enfin, Le plus important pour le confort est l'estimation de la cambrure, partie qui comprend la saillie et le cou-de-pied,
+                    et qui reçoit tout le poids du corps quand le pied est en mouvement.</p>
+                <p class="text-size">Dimitri choisit ensuite le taille du décolleté en fonction de la dimension du talon. Puis il détermine la hauteur du quartier:
+                    ni trop haut, pour ne pas frotter les tendons, ni trop bas, pour bien tenir le pied.</p>
+                <p class="text-size">La difficulté de la création de la forme consiste à tenir compte de toutes vos mesures sans pour autant compromettre
+                    la beauté architectonique de la chaussure.</p>
+                <p class="text-size">la création de la forme à monter nécessite environ 20 heures de travail.</p>
+            </header>
+        </article>
+        <article>
+            <span class="image">
+                <img src="{{ asset("assets/images/local/manufacturing/patronages.jpg") }}" alt="patronnage" />
+            </span>
+            <header class="major">
+                <h3>Patronnage</h3>
+                <p>Dimitri découpe l'empeigne suivant la forme à monter.</p>
+            </header>
+        </article>
+        <article>
+            <span class="image">
+                <img src="{{ asset("assets/images/local/manufacturing/chaussondessayage[1].jpg") }}" alt="chausso_essayage" />
+            </span>
+            <header class="major">
+                <h3>Chausson d'essayage (maquette)</h3>
+                <p>Dimitri ouvre le chausson d'essayage pour évaluer le mouvement de votre pied à l'intérieur de la chaussure.</p>
+            </header>
+        </article>
+        <article>
+            <span class="image">
+                <img src="{{ asset("assets/images/local/manufacturing/coupe_tige.jpg") }}" alt="coupe_tige" />
+            </span>
+            <header class="major">
+                <h3>Coupe de la tige</h3>
+            </header>
+        </article>
+        <article>
+            <span class="image">
+                <img src="{{ asset("assets/images/local/manufacturing/piquage.jpg") }}" alt="piquage" />
+            </span>
+            <header class="major">
+                <h3>Piquage</h3>
+            </header>
+        </article>
+        <article>
+            <span class="image">
+                <img src="{{ asset("assets/images/local/manufacturing/mesure.jpg") }}" alt="montage" />
+            </span>
+            <header class="major">
+                <h3><a href="{{ path('app_manufacturing_galery') }}" class="link">Montage</a></h3>
+                <p>L'empeigne est mise à sécher sur la forme deux jours pour qu'elle prenne parfaitement
+                    le galbe de la forme à monter. L'empeigne est ensuite montée. L'assemblage et le montage
+                    d'un soulier nécessitent environ 70 étapes</p>
+            </header>
+        </article>
+        <article>
+            <span class="image">
+                <img src="{{ asset("assets/images/local/manufacturing/finissage.jpg") }}" alt="finissage" />
+            </span>
+            <header class="major">
+                <h3>Finissage</h3>
+                <p>Enfin vient le finissage : Dimitri taille la trépointe, rogne les talons, polit la semelle
+                    et ajoute la première de propreté. Cirée, passée à la peau de chamois, la chaussure
+                    est prête à chausser.</p>
+            </header>
+        </article>
+    </section>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v5.0"></script>
+{% endblock %}
