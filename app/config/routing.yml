@@ -111,6 +111,15 @@ app_legal_notice:
 ##########################################################
 ##########################################################
 
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+login:
+    path: /login
+
+logout:
+    path: /logout
+
 #admin_panel:
 #    path:     /admin
 #    defaults: { _controller: "AppBundle:Default:panel" }
