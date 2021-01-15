@@ -127,3 +127,32 @@ logout:
 #app_navigation:
 #    resource: "@AppBundle/Resources/config/routing/navigation.yml"
 #    prefix:   /admin/navigation
+
+#----------------------------------------------------------------------
+#                   MEDIA
+#----------------------------------------------------------------------
+
+media_index:
+    path:     /admin
+    defaults: { _controller: "AppBundle:Media:index" }
+    methods:  GET
+
+media_show:
+    path:     /{id}/show
+    defaults: { _controller: "AppBundle:Media:show" }
+    methods:  GET
+
+media_new:
+    path:     /new
+    defaults: { _controller: "AppBundle:Media:new" }
+    methods:  [GET, POST]
+
+media_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AppBundle:Media:edit" }
+    methods:  [GET, POST]
+
+media_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AppBundle:Media:delete" }
+    methods:  DELETE
