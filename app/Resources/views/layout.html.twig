@@ -26,6 +26,7 @@
                 <li><a href="{{ path('app_manufacturing') }}" class="link">Fabrication</a></li>
                 <li><a href="{{ path('app_left_over') }}" class="link">Laissés pour Compte</a></li>
                 {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                <li><a href="{{ path('media_index') }}" class="">Ajouter une photo</a></li>
                 <li><a href="{{ path('fos_user_security_logout') }}">{{ 'Se Déconnecter'|trans({}, 'FOSUserBundle') }}</a></li>
                 {% endif %}
             </ul>

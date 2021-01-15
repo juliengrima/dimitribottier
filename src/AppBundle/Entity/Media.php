@@ -9,21 +9,21 @@ class Media
 {
 
     // Variable temporaire pour upload de fichier
-    private $file;
+    public $file;
 
     public function getFile()
     {
         return $this->file;
     }
 
-    public function setFile($picture)
+    public function setFile($image)
     {
-        $this->file = $picture;
+        $this->file = $image;
         return $this;
     }
 
 
-    function __toString()
+    public function __toString()
     {
         return $this->getName() . ' | ' . $this->getPath();
     }

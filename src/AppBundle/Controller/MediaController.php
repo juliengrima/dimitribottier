@@ -33,74 +33,87 @@ class MediaController extends Controller
      */
     public function newAction(Request $request)
     {
-        $medium = new Medium();
-        $form = $this->createForm('AppBundle\Form\Media', $medium);
+        $media = new Media();
+        $form = $this->createForm('AppBundle\Form\Media', $media);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
 
+            $imageForm = $form->get ('media');
+            $image = $imageForm->getData ();
+
+            if (isset($image)){
+                /* GIVE NAME TO THE FILE : PREG_REPLACE PERMITS THE REMOVAL OF SPACES AND OTHER UNDESIRABLE CHARACTERS*/
+                $image->setMediaName (preg_replace ('/\W/', '_', "picture_" . uniqid ()));
+
+                // On appelle le service d'upload de média (AppBundle/Services/mediaInterface)
+                $this->get ('media.interface')->mediaUpload ($image);
+
+            }
+
+
             $em = $this->getDoctrine()->getManager();
-            $em->persist($medium);
+            $em->persist($media);
             $em->flush();
 
-            return $this->redirectToRoute('media_show', array('id' => $medium->getId()));
+            return $this->redirectToRoute('media_index');
         }
 
         return $this->render('media/new.html.twig', array(
-            'medium' => $medium,
+            'media' => $media,
             'form' => $form->createView(),
         ));
     }
 
+//    /**
+//     * Finds and displays a medium entity.
+//     *
+//     */
+//    public function showAction(Media $media)
+//    {
+//        $deleteForm = $this->createDeleteForm($media);
+//
+//        return $this->render('media/show.html.twig', array(
+//            'medium' => $media,
+//            'delete_form' => $deleteForm->createView(),
+//        ));
+//    }
+
     /**
-     * Finds and displays a medium entity.
+     * Displays a form to edit an existing media entity.
      *
      */
-    public function showAction(Media $medium)
+    public function editAction(Request $request, Media $media)
     {
-        $deleteForm = $this->createDeleteForm($medium);
-
-        return $this->render('media/show.html.twig', array(
-            'medium' => $medium,
-            'delete_form' => $deleteForm->createView(),
-        ));
-    }
-
-    /**
-     * Displays a form to edit an existing medium entity.
-     *
-     */
-    public function editAction(Request $request, Media $medium)
-    {
-        $deleteForm = $this->createDeleteForm($medium);
-        $editForm = $this->createForm('AppBundle\Form\Media', $medium);
+        $deleteForm = $this->createDeleteForm($media);
+        $editForm = $this->createForm('AppBundle\Form\Media', $media);
         $editForm->handleRequest($request);
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {
             $this->getDoctrine()->getManager()->flush();
 
-            return $this->redirectToRoute('media_edit', array('id' => $medium->getId()));
+            return $this->redirectToRoute('media_edit', array('id' => $media->getId()));
         }
 
         return $this->render('media/edit.html.twig', array(
-            'medium' => $medium,
+            'medium' => $media,
             'edit_form' => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
         ));
     }
 
     /**
-     * Deletes a medium entity.
+     * Deletes a media entity.
      *
      */
-    public function deleteAction(Request $request, Media $medium)
+    public function deleteAction(Request $request, Media $media)
     {
-        $form = $this->createDeleteForm($medium);
+        $form = $this->createDeleteForm($media);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
-            $em->remove($medium);
+            $em->remove($media);
             $em->flush();
         }
 
@@ -110,14 +123,14 @@ class MediaController extends Controller
     /**
      * Creates a form to delete a medium entity.
      *
-     * @param Media $medium The medium entity
+     * @param Media $media The medium entity
      *
      * @return \Symfony\Component\Form\Form The form
      */
-    private function createDeleteForm(Media $medium)
+    private function createDeleteForm(Media $media)
     {
         return $this->createFormBuilder()
-            ->setAction($this->generateUrl('media_delete', array('id' => $medium->getId())))
+            ->setAction($this->generateUrl('media_delete', array('id' => $media->getId())))
             ->setMethod('DELETE')
             ->getForm()
             ;

@@ -6,6 +6,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 
 class Media extends AbstractType
 {
@@ -18,7 +19,29 @@ class Media extends AbstractType
             'label' => false,
             'data_class' => null
         ))
-        ;
+                ->add('isAttending', ChoiceType::class, [
+                    'choices'  => [
+                        'Actualité' => [
+                            'Cette saison' => 'season',
+                            'Exotiques' => 'exotic',
+                            'Inspirations' => 'nspiration',
+                            'Nouvelles créations' => 'ncreation',
+                            'Pauseries disponibles' => 'leatherwork',
+                            'Précédentes créations' => 'pcreation',
+                        ],
+                        'Sur mesure' => [
+                            'Sur mesure' => 'tailored',
+                        ],
+                        'Ligne Bottier' => [
+                            'Ligne Bottier' => 'line',
+                        ],
+                        'Laissées pour compte' => [
+                            'Chukka' => 'chukka',
+                            'Escarpins' => 'escarpin',
+                            'Richelieu' => 'richelieu',
+                        ],
+
+                    ]]);
     }
     
     /**

@@ -6,7 +6,6 @@ use AppBundle\Entity\Media;
 use Symfony\Component\DependencyInjection\ContainerInterface as Container;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
-use FFMpeg\FFMpeg;
 
 class mediaInterface extends Controller
 {
