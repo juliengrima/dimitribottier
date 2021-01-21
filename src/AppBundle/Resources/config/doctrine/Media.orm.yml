@@ -15,6 +15,10 @@ AppBundle\Entity\Media:
         path:
             type: string
             length: 255
+        page:
+            type: string
+            length: 255
+            nullable : false
 
 #    manyToOne:
 #        media:

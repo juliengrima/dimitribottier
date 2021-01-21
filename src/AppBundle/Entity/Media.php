@@ -44,6 +44,11 @@ class Media
     private $path;
 
     /**
+     * @var string
+     */
+    private $page;
+
+    /**
      * Get id
      *
      * @return int
@@ -128,5 +133,29 @@ class Media
     public function getMedia()
     {
         return $this->media;
+    }
+
+    /**
+     * Set page
+     *
+     * @param string $page
+     *
+     * @return Media
+     */
+    public function setPage($page)
+    {
+        $this->page = $page;
+
+        return $this;
+    }
+
+    /**
+     * Get page
+     *
+     * @return string
+     */
+    public function getPage()
+    {
+        return $this->page;
     }
 }

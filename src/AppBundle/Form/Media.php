@@ -19,7 +19,7 @@ class Media extends AbstractType
             'label' => false,
             'data_class' => null
         ))
-                ->add('isAttending', ChoiceType::class, [
+                ->add('page', ChoiceType::class, [
                     'choices'  => [
                         'Actualité' => [
                             'Cette saison' => 'season',
