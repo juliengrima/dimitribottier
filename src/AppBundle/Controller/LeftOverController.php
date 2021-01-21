@@ -13,12 +13,24 @@ class LeftOverController extends Controller
         return $this->render('leftover/leftover.twig');
     }
     public function leftOverGalery1Action (){
-        return $this->render('leftover/leftover_galery.twig');
+        $em = $this->getDoctrine()->getManager();
+        $media = $em->getRepository('AppBundle:Media')->findBy(array('page' => "escarpin"));
+        return $this->render('leftover/leftover_galery.twig', array(
+            'medias' => $media,
+        ));
     }
     public function leftOverGalery2Action (){
-    return $this->render('leftover/leftover_galery2.twig');
+        $em = $this->getDoctrine()->getManager();
+        $media = $em->getRepository('AppBundle:Media')->findBy(array('page' => "richelieu"));
+        return $this->render('leftover/leftover_galery2.twig', array(
+            'medias' => $media,
+        ));
     }
     public function leftOverGalery3Action (){
-        return $this->render('leftover/leftover_galery3.twig');
+        $em = $this->getDoctrine()->getManager();
+        $media = $em->getRepository('AppBundle:Media')->findBy(array('page' => "chukka"));
+        return $this->render('leftover/leftover_galery3.twig', array(
+            'medias' => $media,
+        ));
     }
 }

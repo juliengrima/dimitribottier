@@ -22,18 +22,11 @@
 
         <!-- Main -->
         <div id="main">
-            <article class="thumb">
-                <a href="{{ asset('assets/images/local/uncollected/uncollected20.jpg') }}" class="image"><img src="{{ asset('assets/images/local/uncollected/uncollected20.jpg') }}" alt="Escarpin Une Pièce" /></a>
-            </article>
-            <article class="thumb">
-                <a href="{{ asset('assets/images/local/uncollected/uncollected21.jpg') }}" class="image"><img src="{{ asset('assets/images/local/uncollected/uncollected21.jpg') }}" alt="Escarpin Une Pièce" /></a>
-            </article>
-            <article class="thumb">
-                <a href="{{ asset('assets/images/local/uncollected/uncollected22.jpg') }}" class="image"><img src="{{ asset('assets/images/local/uncollected/uncollected22.jpg') }}" alt="Escarpin Une Pièce" /></a>
-            </article>
-            <article class="thumb">
-                <a href="{{ asset('assets/images/local/uncollected/uncollected23.jpg') }}" class="image"><img src="{{ asset('assets/images/local/uncollected/uncollected23.jpg') }}" alt="Escarpin Une Pièce" /></a>
-            </article>
+            {% for media in medias %}
+                <article class="thumb">
+                    <a href="{{ asset(media.path) }}" class="image"><img src="{{ asset(media.path) }}" alt="{{media.name}}" /></a>
+                </article>
+            {% endfor %}
         </div>
 
     </div>
